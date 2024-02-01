@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { MetricCardSkeleton } from './metric-card-skeleton'
 
 export function MonthRevenueCard() {
+  throw new Error('erro no card')
   const { data: monthRevenue } = useQuery({
     queryKey: ['metrics', 'month-revenue'],
     queryFn: getMonthRevenue,
